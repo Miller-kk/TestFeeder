@@ -14,8 +14,18 @@ def exploitableCli():
     print("[3] Reentrancy")
     print("[4] BadRandomness")
     print("[5] Selfdestruct")
-    exploitableBug = input("please pick Number Of Exploitable Side Vulnerability : ")
+    exploitableBug = input("Please pick Number Of Exploitable Side Vulnerability : ")
     return exploitableBug
+
+def complexityCli():
+    print("\n\n")
+    print("################Data Dependency Stage################")
+    print("How much do you need variable aggregation?")
+    print("[1] Stage1")
+    print("[2] Stage2")
+    print("[3] Stage3")
+    stage = input("Please pick Number Of Complexity Stage : ")
+    return stage
 
 def nonExploitableCli():
     print("\n\n")
@@ -30,14 +40,9 @@ def nonExploitableCli_Level3():
     print("\n\n")
     print("################Non-Exploitable Side Vulnerability################")
     print("[1] ABIEncoderV2PackedStorage")
-    print("[2] DoubleShiftSizeOverflow")
-    print("[3] ExpExponentCleanup")
-    print("[4] NestedArrayFunctionCallDecoder")
-    print("[5] SkipEmptyStringLiteral")
-    print("[6] HighOrderByteCleanStorage")
-    print("[7] Hidden State Update")
-    print("[8] OneOfTwoConstructorsSkipped")
-    print("[9] Uninitialised Struct")
+    print("[2] ExpExponentCleanup")
+    print("[3] HighOrderByteCleanStorage")
+    print("[4] Uninitialised Struct")
     nonExploitableBug = input("Please Pick Number Of Non-Exploitable Side Vulnerability :")
     return nonExploitableBug
 
